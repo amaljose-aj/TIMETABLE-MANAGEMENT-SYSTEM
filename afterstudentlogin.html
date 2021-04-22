@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+h2{
+  font-family: Verdana;
+
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+.raj{
+  text-allign: center;
+}
+.legend{
+  position: relative;
+  width: 100%;
+  display: block;
+  background: #FF7052;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  &:after{
+    content: "";
+    background-image: url(http://simpleicon.com/wp-content/uploads/multy-user.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 152px -16px;
+    opacity: 0.06;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+i{
+float:right;
+font-size:100px;
+}
+</style>
+
+  </head>
+  <body>
+    <h1 class=raj>Welcome {{content}}</h1>
+    <h2 class=legend>Timetable Management</h2>
+    <i class='fas fa-graduation-cap'></i>
+
+    <div class="container">
+        <div class="row" style="margin-top: 40px">
+            <div class="col-sm-6">
+
+                    <button type="button" class="btn btn-info"><a href="/studentprofile">Profile</a></button><br><br>
+                    <button type="button" class="btn btn-info"><a href="/viewattendance">View Attendance</a></button><br><br>
+
+                    <button type="button" class="btn btn-info"><a href="/viewmarklist">View Marklist</a></button><br><br>
+                    <button type="button" class="btn btn-info"><a href="/acedamiccalender">Acedamic Calender</a></button><br><br>
+                    <button type="button" class="btn btn-info"><a href="/timetable">View TimeTable</a></button><br><br>
+                    <button type="button" class="btn btn-info"><a href="/logout">Logout</a></button><br>
+
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>

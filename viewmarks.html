@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+body {
+  background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
+}
+
+</style>
+  </head>
+  <body>
+    <h1><u>MARKLIST</u></h1>
+    <table>
+      <tr>
+        <th>MARK</th>
+        <th>SUBJECT</th>
+      </tr>
+    {% for item in maark %}
+    <tr>
+      <td>{{item.mark}}</td>
+      <td>{{item.subject}}</td>
+    </tr>
+
+
+
+
+      {% endfor %}
+
+
+
+  </body>
+</html>

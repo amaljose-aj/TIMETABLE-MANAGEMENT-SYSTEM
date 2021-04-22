@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+body {
+  background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
+}
+
+</style>
+  </head>
+
+  <body>
+    <h1><u>ATTENDANCE</u></h1>
+    <table>
+      <tr>
+        <th>STATUS</th>
+        <th>DAY</th>
+      </tr>
+    {% for item in att %}
+      <tr>
+        <td>{{item.status}}</td>
+        <td>{{item.date}}</td>
+      </tr>
+
+
+
+
+      {% endfor %}
+    </table>
+
+
+  </body>
+</html>
